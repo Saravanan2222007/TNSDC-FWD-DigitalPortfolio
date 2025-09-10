@@ -1,0 +1,215 @@
+/* General */
+
+body {
+
+  margin: 0;
+
+  font-family: Arial, sans-serif;
+
+  line-height: 1.6;
+
+  scroll-behavior: smooth;
+
+}
+
+/* Navbar */
+
+.navbar {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  background: #2c3e50;
+
+  padding: 15px 20px;
+
+  color: white;
+
+}
+
+.nav-links {
+
+  list-style: none;
+
+  display: flex;
+
+  gap: 20px;
+
+}
+
+.nav-links li a {
+
+  color: white;
+
+  text-decoration: none;
+
+  font-weight: bold;
+
+}
+
+.menu-toggle {
+
+  display: none;
+
+  font-size: 24px;
+
+  cursor: pointer;
+
+}
+
+/* Hero */
+
+.hero {
+
+  text-align: center;
+
+  padding: 100px 20px;
+
+  background: linear-gradient(to right, #3498db, #8e44ad);
+
+  color: white ;
+
+}
+
+.hero h1 {
+
+  font-size: 2.5rem;
+
+}
+
+.btn {
+
+  display: inline-block;
+
+  margin-top: 20px;
+
+  padding: 10px 25px;
+
+  background: #27ae60;
+
+  color: black;
+
+  border-radius: 5px;
+
+  text-decoration: none;
+
+}
+
+/* Sections */
+
+section {
+
+  padding: 60px 20px;
+
+  text-align: center;
+
+}
+
+.projects .project-grid {
+
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+  gap: 20px;
+
+}
+
+.card {
+
+  background: #f4f4f4;
+
+  padding: 20px;
+
+  border-radius: 10px;
+
+  transition: transform 0.3s;
+
+}
+
+.card:hover {
+
+  transform: translateY(-5px);
+
+}
+
+/* Contact */
+
+form {
+
+  max-width: 400px;
+
+  margin: auto;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 15px;
+
+}
+
+form input, form textarea {
+
+  padding: 10px;
+
+  border: 1px solid #ccc;
+
+  border-radius: 5px;
+
+}
+
+/* Footer */
+
+footer {
+
+  background: #2c3e50;
+
+  color: white;
+
+  text-align: center;
+
+  padding: 15px;
+
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+
+  .nav-links {
+
+    display: none;
+
+    flex-direction: column;
+
+    background: #34495e;
+
+    position: absolute;
+
+    top: 60px;
+
+    right: 0;
+
+    width: 200px;
+
+    padding: 10px;
+
+  }
+
+  .nav-links.active {
+
+    display: flex;
+
+  }
+
+  .menu-toggle {
+
+    display: block;
+
+  }
+
+}

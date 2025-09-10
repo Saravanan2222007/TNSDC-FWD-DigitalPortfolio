@@ -1,0 +1,12 @@
+
+// Toggle Mobile Menu
+function toggleMenu() {
+  document.querySelector(".nav-links").classList.toggle("active");
+}
+
+// Contact Form Validation
+document.getElementById("contactForm").addEventListener("submit", function(e) {
+  e.preventDefault();
+  alert("Thank you! Your message has been sent.");
+  this.reset();
+});
